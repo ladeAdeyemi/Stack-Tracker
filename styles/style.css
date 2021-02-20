@@ -42,7 +42,7 @@ body {
 #heading2 {
   font-family: "Avenir LT Pro Black", "Arial Black";
   font-size: 20px;
-  color: coral;
+  color: lavender;
   margin: auto;
   text-align: center;
 }
@@ -50,7 +50,7 @@ body {
 .heading3 {
   font-family: "Avenir Lt Pro Heavy";
   font-size: 16px;
-  color: coral;
+  color: lavender;
 }
 
 section#user-input {
@@ -67,7 +67,7 @@ label {
 }
 
 #input {
-  border: 2px solid coral;
+  border: 2px solid lavender;
   border-radius: 3px;
   font-family: "Consolas", "Inter", "Arial", "Helvetica";
   padding: 3px;
@@ -76,14 +76,14 @@ label {
 }
 
 #btn {
-  border: 2px solid coral;
+  border: 2px solid lavender;
   border-radius: 3px;
   font-family: "Consolas", "Inter", "Arial", "Helvetica";
   padding: 3px;
   margin: 5px;
   margin-top: 10px;
-  background-color: coral;
-  color: white;
+  background-color: lavender;
+  color: royalblue;
 }
 
 ul {
@@ -94,7 +94,7 @@ ul {
 #counter {
   font-family: "Avenir LT Pro Black", "Arial Black";
   font-size: 150px;
-  color: coral;
+  color: lavender;
   text-align: center;
 }
 
@@ -113,7 +113,7 @@ ul {
 }
 
 #footer a {
-  color: coral;
+  color: lavender;
   text-decoration: none;
 }
 
@@ -124,7 +124,7 @@ ul {
 .fineprint {
   font-size: 10px;
   font-family: "Consolas", "Inter", "Arial", "Helvetica";
-  color: coral;
+  color: lavender;
   text-align: center;
   display: block;
   margin-top: 15px;
@@ -134,17 +134,17 @@ ul {
 .li-styles {
   font-family: "Avenir Lt Pro Heavy";
   font-size: 16px;
-  color: coral;
+  color: lavender;
   margin: 8px;
   margin-top: 20px;
   padding: 5px;
-  border: 1px solid coral;
+  border: 1px solid lavender;
   transition: 0.4s ease;
 }
 
 .li-styles:hover {
-  color: white;
-  background-color: coral;
+  color: royalblue;
+  background-color: lavender;
   padding: 5px;
 }
 

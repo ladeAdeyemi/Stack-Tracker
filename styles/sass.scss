@@ -33,7 +33,7 @@
 // $headerFooter: navy;
 // $counterEtc:  royalblue;
 $headerFooter: royalblue;
-$counterEtc: coral;
+$counterEtc: lavender;
 $h1FooterP: white;
 
 // Fonts
@@ -116,7 +116,7 @@ label {
 #btn {
     @include formStyles;
     background-color:$counterEtc;
-    color:$h1FooterP;
+    color:$headerFooter;
 }
 
 // section#tech-display{
@@ -186,7 +186,7 @@ ul {
 }
 
 .li-styles:hover {
-    color: $h1FooterP;
+    color: $headerFooter;
     background-color: $counterEtc;
     padding: 5px;
 }
