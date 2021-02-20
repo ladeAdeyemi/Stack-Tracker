@@ -23,7 +23,7 @@
 }
 
 #header {
-  background-color: black;
+  background-color: royalblue;
   padding: 30px;
 }
 
@@ -43,8 +43,18 @@
   text-align: center;
 }
 
-#user-input {
+.heading3 {
+  font-family: "Avenir Lt Pro Heavy";
+  font-size: 16px;
+  color: coral;
+}
+
+section#user-input {
   padding-top: 30px;
+}
+
+form#stack {
+  text-align: center;
 }
 
 label {
@@ -72,28 +82,22 @@ label {
   color: white;
 }
 
-#stack {
+ul {
   text-align: center;
-}
-
-.heading3 {
-  font-family: "Avenir Lt Pro Heavy";
-  font-size: 16px;
-  color: coral;
+  margin-bottom: 20px;
 }
 
 #counter {
   font-family: "Avenir LT Pro Black", "Arial Black";
   font-size: 150px;
   color: coral;
-  padding: 5px;
   text-align: center;
 }
 
 #footer {
-  background-color: black;
-  padding-bottom: 56px;
-  padding-top: 30px;
+  background-color: royalblue;
+  padding-bottom: 12px;
+  padding-top: 10px;
 }
 
 #footer p {
@@ -101,7 +105,16 @@ label {
   font-size: 14px;
   color: white;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
+}
+
+#footer a {
+  color: coral;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
 }
 
 .fineprint {
@@ -110,7 +123,7 @@ label {
   color: coral;
   text-align: center;
   display: block;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 /*  JAVASCRIPT INJECTED STYLES  */
