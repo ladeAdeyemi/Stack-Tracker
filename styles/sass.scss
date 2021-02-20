@@ -65,6 +65,10 @@ $liHeading3: "Avenir Lt Pro Heavy";
     padding: 0;
 }
 
+body {
+    background-color: $headerFooter;
+}
+
 #header {
     background-color: $headerFooter;
     padding: 30px;
@@ -101,7 +105,7 @@ form#stack {
 }
 
 label {
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
 }
 
@@ -136,8 +140,8 @@ ul {
 }
 
 #footer {
-    background-color: $headerFooter;
-    padding-bottom:12px;
+    background-color: black;
+    padding-bottom:42px;
     padding-top: 10px;
 }
 

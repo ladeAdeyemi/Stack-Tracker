@@ -22,6 +22,10 @@
   padding: 0;
 }
 
+body {
+  background-color: royalblue;
+}
+
 #header {
   background-color: royalblue;
   padding: 30px;
@@ -58,7 +62,7 @@ form#stack {
 }
 
 label {
-  display: block;
+  display: inline-block;
   margin-bottom: 10px;
 }
 
@@ -95,8 +99,8 @@ ul {
 }
 
 #footer {
-  background-color: royalblue;
-  padding-bottom: 12px;
+  background-color: black;
+  padding-bottom: 42px;
   padding-top: 10px;
 }
 
