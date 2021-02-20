@@ -1,0 +1,100 @@
+/*   FONT FAMILIES   */
+@font-face {
+  src: url(../fonts/Consolas.ttf);
+  font-family: "Consolas";
+}
+@font-face {
+  src: url(../fonts/Avenir-Lt-Pro-65-Medium.otf);
+  font-family: "Avenir LT Pro Black";
+}
+@font-face {
+  src: url(../fonts/Avenir-Lt-Pro-55-Roman.otf);
+  font-family: "Avenir LT Pro Heavy";
+}
+@font-face {
+  src: url(../fonts/Inter-Regular.ttf);
+  font-family: "Inter";
+}
+
+/*  MAIN CSS CODE  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: black;
+  padding: 30px;
+}
+
+#heading1 {
+  font-family: "Avenir LT Pro Black", "Arial Black";
+  font-size: 80px;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+#heading2 {
+  font-family: "Avenir LT Pro Black", "Arial Black";
+  font-size: 20px;
+  color: coral;
+  margin: auto;
+  text-align: center;
+}
+
+.heading3 {
+  font-family: "Avenir Lt Pro Heavy";
+  font-size: 14px;
+  color: coral;
+}
+
+#counter {
+  font-family: "Avenir LT Pro Black", "Arial Black";
+  font-size: 150px;
+  color: coral;
+  padding: 5px;
+  text-align: center;
+}
+
+#footer {
+  background-color: black;
+  padding: 20px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+#footer p {
+  font-family: "Consolas", "Inter", "Arial", "Helvetica";
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.fineprint {
+  font-size: 10px;
+  font-family: "Consolas", "Inter", "Arial", "Helvetica";
+  color: coral;
+  text-align: center;
+  display: block;
+  margin-top: 100px;
+}
+
+/*  JAVASCRIPT INJECTED STYLES  */
+.li-styles {
+  font-family: "Avenir Lt Pro Heavy";
+  font-size: 16px;
+  color: coral;
+  margin: 8px;
+  margin-top: 20px;
+  padding: 5px;
+  border: 1px solid coral;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/*  MEDIA QUERIES  */

@@ -1,0 +1,152 @@
+/*   FONT FAMILIES   */
+
+
+
+@font-face {
+
+    src: url(../fonts/Consolas.ttf);
+    font-family: "Consolas";
+}
+
+
+
+@font-face {
+
+    src: url(../fonts/Avenir-Lt-Pro-65-Medium.otf);
+    font-family: "Avenir LT Pro Black";
+}
+
+
+
+@font-face {
+
+    src: url(../fonts/Avenir-Lt-Pro-55-Roman.otf);
+    font-family: "Avenir LT Pro Heavy";
+}
+
+
+
+@font-face {
+
+    src: url(../fonts/Inter-Regular.ttf);
+    font-family: "Inter";
+}
+
+
+
+//  VARIABLES 
+
+
+// Colors
+
+$headerFooter: black;
+$counterEtc: coral;
+$h1FooterP: white;
+
+// Fonts
+
+$headingCounterStack: "Avenir LT Pro Black", "Arial Black";
+$footerFontStack: "Consolas", "Inter", "Arial", "Helvetica"; 
+$liHeading3: "Avenir Lt Pro Heavy";
+
+//  MIXINS  
+
+@mixin centered {
+
+    text-align: center
+
+}
+
+/*  MAIN CSS CODE  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+
+    background-color: $headerFooter;
+    padding: 30px;
+
+}
+
+#heading1 {
+    font-family: $headingCounterStack;
+    font-size:80px;
+    color: $h1FooterP;
+    margin: auto;
+    text-align: center;
+}
+
+#heading2 {
+
+    font-family: $headingCounterStack;
+    font-size:20px;
+    color: $counterEtc;
+    margin: auto;
+    @include centered;
+}
+
+.heading3 {
+
+    font-family: $liHeading3;
+    font-size: 14px;
+    color: $counterEtc;
+
+}
+
+
+
+#counter {
+    font-family: $headingCounterStack;
+    font-size: 150px;
+    color: $counterEtc;
+    padding: 5px;
+    @include centered;
+}
+
+#footer {
+    background-color: $headerFooter;
+    padding: 20px;
+    padding-bottom:50px;
+    padding-top: 30px;
+}
+
+#footer p {
+
+    font-family: $footerFontStack;
+    font-size: 14px;
+    color: $h1FooterP;
+    @include centered;
+    margin-top: 10px;
+}
+
+.fineprint {
+
+    font-size: 10px;
+    font-family: $footerFontStack;
+    color: $counterEtc;
+    @include centered;
+    display: block;
+    margin-top: 100px;
+}
+
+/*  JAVASCRIPT INJECTED STYLES  */
+
+.li-styles {
+    font-family: $liHeading3;
+    font-size: 16px;
+    color: $counterEtc;
+    margin: 8px;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid coral;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/*  MEDIA QUERIES  */
