@@ -9,10 +9,6 @@ const ul = document.querySelector("#ul");
 const divCounter = document.querySelector("#counter");
 const input = document.querySelector("#input");
 
-/* EVENT LISTENERS */
-
-btn.addEventListener("click", createListItem);
-
 /* FUNCTIONS */
 
 // Adds technology submitted in frontend field as a list item to the Ul and records the number of technologies entered
@@ -30,5 +26,15 @@ function createListItem (e) {
     input.value = " ";
     techCounter++;
     divCounter.textContent = techCounter;
+    showSaveButton();
     
 }
+
+
+function showSaveButton () {
+
+}
+
+/* EVENT LISTENERS */
+
+btn.addEventListener("click", createListItem);

@@ -122,6 +122,13 @@ label {
   margin-top: 20px;
   padding: 5px;
   border: 1px solid coral;
+  transition: 0.4s ease;
+}
+
+.li-styles:hover {
+  color: white;
+  background-color: coral;
+  padding: 5px;
 }
 
 .inline-block {

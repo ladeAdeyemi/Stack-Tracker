@@ -1,14 +1,10 @@
 /*   FONT FAMILIES   */
 
-
-
 @font-face {
 
     src: url(../fonts/Consolas.ttf);
     font-family: "Consolas";
 }
-
-
 
 @font-face {
 
@@ -16,15 +12,11 @@
     font-family: "Avenir LT Pro Black";
 }
 
-
-
 @font-face {
 
     src: url(../fonts/Avenir-Lt-Pro-55-Roman.otf);
     font-family: "Avenir LT Pro Heavy";
 }
-
-
 
 @font-face {
 
@@ -32,10 +24,7 @@
     font-family: "Inter";
 }
 
-
-
 //  VARIABLES 
-
 
 // Colors
 
@@ -173,6 +162,13 @@ label {
     margin-top: 20px;
     padding: 5px;
     border: 1px solid coral;
+    transition: 0.4s ease;
+}
+
+.li-styles:hover {
+    color: $h1FooterP;
+    background-color: $counterEtc;
+    padding: 5px;
 }
 
 .inline-block {
