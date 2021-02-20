@@ -52,9 +52,16 @@ $liHeading3: "Avenir Lt Pro Heavy";
 //  MIXINS  
 
 @mixin centered {
-
     text-align: center
+}
 
+@mixin formStyles {
+    border: 2px solid $counterEtc;
+    border-radius: 3px;
+    font-family: $footerFontStack;
+    padding: 3px;
+    margin: 5px;
+    margin-top: 10px;
 }
 
 /*  MAIN CSS CODE  */
@@ -66,10 +73,8 @@ $liHeading3: "Avenir Lt Pro Heavy";
 }
 
 #header {
-
     background-color: $headerFooter;
     padding: 30px;
-
 }
 
 #heading1 {
@@ -81,7 +86,6 @@ $liHeading3: "Avenir Lt Pro Heavy";
 }
 
 #heading2 {
-
     font-family: $headingCounterStack;
     font-size:20px;
     color: $counterEtc;
@@ -89,15 +93,44 @@ $liHeading3: "Avenir Lt Pro Heavy";
     @include centered;
 }
 
-.heading3 {
-
-    font-family: $liHeading3;
-    font-size: 14px;
-    color: $counterEtc;
-
+#user-input {
+    padding-top: 30px;
 }
 
+label {
+    display: block;
+    margin-bottom: 10px;
+}
 
+#input {
+    @include formStyles;
+}
+
+#btn {
+    @include formStyles;
+    background-color:$counterEtc;
+    color:$h1FooterP;
+}
+
+#stack {
+    @include centered;
+}
+
+// #tech-display{
+//     display: flex;
+//     align-items: space-around;
+//     justify-content: center;
+// }
+
+// ul {
+//     max-width: 500px;
+// }
+
+.heading3 {
+    font-family: $liHeading3;
+    font-size: 16px;
+    color: $counterEtc;
+}
 
 #counter {
     font-family: $headingCounterStack;
@@ -109,13 +142,11 @@ $liHeading3: "Avenir Lt Pro Heavy";
 
 #footer {
     background-color: $headerFooter;
-    padding: 20px;
-    padding-bottom:50px;
+    padding-bottom:56px;
     padding-top: 30px;
 }
 
 #footer p {
-
     font-family: $footerFontStack;
     font-size: 14px;
     color: $h1FooterP;
@@ -124,13 +155,12 @@ $liHeading3: "Avenir Lt Pro Heavy";
 }
 
 .fineprint {
-
     font-size: 10px;
     font-family: $footerFontStack;
     color: $counterEtc;
     @include centered;
     display: block;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 /*  JAVASCRIPT INJECTED STYLES  */

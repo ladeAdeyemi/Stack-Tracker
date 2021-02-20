@@ -15,7 +15,6 @@
   src: url(../fonts/Inter-Regular.ttf);
   font-family: "Inter";
 }
-
 /*  MAIN CSS CODE  */
 * {
   box-sizing: border-box;
@@ -44,9 +43,42 @@
   text-align: center;
 }
 
+#user-input {
+  padding-top: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#input {
+  border: 2px solid coral;
+  border-radius: 3px;
+  font-family: "Consolas", "Inter", "Arial", "Helvetica";
+  padding: 3px;
+  margin: 5px;
+  margin-top: 10px;
+}
+
+#btn {
+  border: 2px solid coral;
+  border-radius: 3px;
+  font-family: "Consolas", "Inter", "Arial", "Helvetica";
+  padding: 3px;
+  margin: 5px;
+  margin-top: 10px;
+  background-color: coral;
+  color: white;
+}
+
+#stack {
+  text-align: center;
+}
+
 .heading3 {
   font-family: "Avenir Lt Pro Heavy";
-  font-size: 14px;
+  font-size: 16px;
   color: coral;
 }
 
@@ -60,8 +92,7 @@
 
 #footer {
   background-color: black;
-  padding: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 56px;
   padding-top: 30px;
 }
 
@@ -79,7 +110,7 @@
   color: coral;
   text-align: center;
   display: block;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 /*  JAVASCRIPT INJECTED STYLES  */
