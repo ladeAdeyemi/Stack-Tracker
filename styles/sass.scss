@@ -90,7 +90,7 @@ body {
 
 .heading3 {
     font-family: $liHeading3;
-    font-size: 14px;
+    font-size: 16px;
     color: $headerFooter;
     margin-right: 8px;
 }
@@ -115,6 +115,7 @@ label {
 #input {
     @include formStyles;
     width: 25%;
+    border: 2px solid $headerFooter;
 }
 
 #btn {
@@ -122,6 +123,7 @@ label {
     background-color:$headerFooter;
     color:$counterEtc;
     width: 5%;
+    font-family: $liHeading3;
 }
 
 // section#tech-display{

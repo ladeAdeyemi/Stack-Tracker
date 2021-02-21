@@ -51,7 +51,7 @@ body {
 
 .heading3 {
   font-family: "Avenir Lt Pro Heavy";
-  font-size: 14px;
+  font-size: 16px;
   color: royalblue;
   margin-right: 8px;
 }
@@ -81,6 +81,7 @@ label {
   margin: 5px;
   margin-top: 10px;
   width: 25%;
+  border: 2px solid royalblue;
 }
 
 #btn {
@@ -93,6 +94,7 @@ label {
   background-color: royalblue;
   color: lavender;
   width: 5%;
+  font-family: "Avenir Lt Pro Heavy";
 }
 
 ul {
