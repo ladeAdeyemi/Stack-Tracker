@@ -24,6 +24,8 @@
 
 body {
   background-color: royalblue;
+  margin: 0;
+  padding: 0;
 }
 
 #header {
@@ -49,8 +51,9 @@ body {
 
 .heading3 {
   font-family: "Avenir Lt Pro Heavy";
-  font-size: 16px;
-  color: lavender;
+  font-size: 14px;
+  color: royalblue;
+  margin-right: 8px;
 }
 
 section#user-input {
@@ -59,6 +62,10 @@ section#user-input {
 
 form#stack {
   text-align: center;
+  border-top: 1px solid lavender;
+  border-bottom: 1px solid lavender;
+  padding: 5px;
+  background-color: lavender;
 }
 
 label {
@@ -73,6 +80,7 @@ label {
   padding: 3px;
   margin: 5px;
   margin-top: 10px;
+  width: 25%;
 }
 
 #btn {
@@ -82,13 +90,14 @@ label {
   padding: 3px;
   margin: 5px;
   margin-top: 10px;
-  background-color: lavender;
-  color: royalblue;
+  background-color: royalblue;
+  color: lavender;
+  width: 5%;
 }
 
 ul {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 #counter {
@@ -100,7 +109,7 @@ ul {
 
 #footer {
   background-color: black;
-  padding-bottom: 42px;
+  padding-bottom: 45px;
   padding-top: 10px;
 }
 
@@ -113,7 +122,7 @@ ul {
 }
 
 #footer a {
-  color: lavender;
+  color: royalblue;
   text-decoration: none;
 }
 

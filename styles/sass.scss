@@ -28,10 +28,6 @@
 
 // Colors
 
-// $headerFooter: navy;
-// $counterEtc:  royalblue;
-// $headerFooter: navy;
-// $counterEtc:  royalblue;
 $headerFooter: royalblue;
 $counterEtc: lavender;
 $h1FooterP: white;
@@ -67,6 +63,8 @@ $liHeading3: "Avenir Lt Pro Heavy";
 
 body {
     background-color: $headerFooter;
+    margin: 0;
+    padding: 0;
 }
 
 #header {
@@ -92,8 +90,9 @@ body {
 
 .heading3 {
     font-family: $liHeading3;
-    font-size: 16px;
-    color: $counterEtc;
+    font-size: 14px;
+    color: $headerFooter;
+    margin-right: 8px;
 }
 
 section#user-input {
@@ -102,6 +101,10 @@ section#user-input {
 
 form#stack {
     @include centered;
+    border-top: 1px solid $counterEtc;
+    border-bottom: 1px solid $counterEtc;
+    padding: 5px;
+    background-color: $counterEtc;
 }
 
 label {
@@ -111,12 +114,14 @@ label {
 
 #input {
     @include formStyles;
+    width: 25%;
 }
 
 #btn {
     @include formStyles;
-    background-color:$counterEtc;
-    color:$headerFooter;
+    background-color:$headerFooter;
+    color:$counterEtc;
+    width: 5%;
 }
 
 // section#tech-display{
@@ -129,7 +134,7 @@ label {
 ul {
     // max-width: 30%;
     @include centered;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 #counter {
@@ -141,7 +146,7 @@ ul {
 
 #footer {
     background-color: black;
-    padding-bottom:42px;
+    padding-bottom:45px;
     padding-top: 10px;
 }
 
@@ -154,7 +159,7 @@ ul {
 }
 
 #footer a {
-    color: $counterEtc;
+    color: $headerFooter;
     text-decoration: none;
 }
 
