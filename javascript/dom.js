@@ -5,9 +5,11 @@ let techCounter = 0;
 /* DOM SELECTIONS */
 
 const btn = document.querySelector("#btn");
+const saveBtn = document.querySelector("#save-btn");
 const ul = document.querySelector("#ul");
 const divCounter = document.querySelector("#counter");
 const input = document.querySelector("#input");
+
 
 /* FUNCTIONS */
 
@@ -24,16 +26,27 @@ function createListItem (e) {
     listItem.classList.add("inline-block");
     ul.appendChild(listItem);
     input.value = " ";
-    techCounter++;
-    divCounter.textContent = techCounter;
+    incrementCounter();
     showSaveButton();
     
 }
 
 function showSaveButton () {
+    saveBtn.classList.remove('hide');
+    saveBtn.classList.add('show');
+}
+
+function incrementCounter () {
+    techCounter++;
+    divCounter.textContent = techCounter;
+}
+
+function saveStack () {
+
 
 }
 
 /* EVENT LISTENERS */
 
 btn.addEventListener("click", createListItem);
+saveBtn.addEventListener("click", saveStack);

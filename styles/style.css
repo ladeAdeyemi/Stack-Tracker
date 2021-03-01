@@ -84,6 +84,14 @@ label {
   border: 2px solid royalblue;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
 #btn {
   border: 2px solid lavender;
   border-radius: 3px;
@@ -95,6 +103,21 @@ label {
   color: lavender;
   width: 5%;
   font-family: "Avenir Lt Pro Heavy";
+  margin-right: 5px;
+}
+
+#save-btn {
+  border: 2px solid lavender;
+  border-radius: 3px;
+  font-family: "Consolas", "Inter", "Arial", "Helvetica";
+  padding: 3px;
+  margin: 5px;
+  margin-top: 10px;
+  background-color: royalblue;
+  color: lavender;
+  width: 5%;
+  font-family: "Avenir Lt Pro Heavy";
+  transition: 5s ease-in;
 }
 
 ul {

@@ -118,12 +118,31 @@ label {
     border: 2px solid $headerFooter;
 }
 
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
 #btn {
     @include formStyles;
     background-color:$headerFooter;
     color:$counterEtc;
     width: 5%;
     font-family: $liHeading3;
+    margin-right: 5px;
+}
+
+#save-btn {
+    @include formStyles;
+    background-color:$headerFooter;
+    color:$counterEtc;
+    width: 5%;
+    font-family: $liHeading3;
+    transition:5s ease-in;
 }
 
 // section#tech-display{
@@ -168,7 +187,6 @@ ul {
 #footer a:hover {
     text-decoration: underline;
 }
-
 
 .fineprint {
     font-size: 10px;
