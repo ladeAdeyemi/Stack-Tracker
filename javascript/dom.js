@@ -1,6 +1,6 @@
 /* TECH COUNTER */
 
-let techCounter = 0;
+let techCounter = 0; // (Displays the number of technologies being tracked by the user)
 
 /* DOM SELECTIONS */
 
@@ -10,13 +10,12 @@ const ul = document.querySelector("#ul");
 const divCounter = document.querySelector("#counter");
 const input = document.querySelector("#input");
 
-
 /* FUNCTIONS */
 
 // Adds technology submitted in frontend field as a list item to the Ul and records the number of technologies entered
 
 function createListItem (e) {
-    
+
     e.preventDefault();
     // console.log(e.target);
     if (input.value === " ") return;
@@ -28,7 +27,7 @@ function createListItem (e) {
     input.value = " ";
     incrementCounter();
     showSaveButton();
-    
+
 }
 
 function showSaveButton () {
@@ -41,12 +40,11 @@ function incrementCounter () {
     divCounter.textContent = techCounter;
 }
 
-function saveStack () {
-
-
-}
+// function saveStack () {
+//
+// }
 
 /* EVENT LISTENERS */
 
 btn.addEventListener("click", createListItem);
-saveBtn.addEventListener("click", saveStack);
+// saveBtn.addEventListener("click", saveStack);

@@ -24,7 +24,7 @@
     font-family: "Inter";
 }
 
-//  VARIABLES 
+//  VARIABLES
 
 // Colors
 
@@ -35,10 +35,10 @@ $h1FooterP: white;
 // Fonts
 
 $headingCounterStack: "Avenir LT Pro Black", "Arial Black";
-$footerFontStack: "Consolas", "Inter", "Arial", "Helvetica"; 
+$footerFontStack: "Consolas", "Inter", "Arial", "Helvetica";
 $liHeading3: "Avenir Lt Pro Heavy";
 
-//  MIXINS  
+//  MIXINS
 
 @mixin centered {
     text-align: center
@@ -117,7 +117,6 @@ label {
     width: 25%;
     border: 2px solid $headerFooter;
 }
-
 
 .hide {
     display: none;
