@@ -1,6 +1,7 @@
-/* TECH COUNTER */
+/* GLOBAL VARIABLES */
 
 let techCounter = 0; // (Displays the number of technologies being tracked by the user)
+
 
 /* DOM SELECTIONS */
 
@@ -27,6 +28,8 @@ function createListItem (e) {
         let listItem = document.createElement("li");
         listItem.classList.add("inline-block", "li-styles");
         listItem.addEventListener('click', deleteTech);
+        // listItem.addEventListener('mouseover', showDelete);
+        // listItem.addEventListener('mouseout', revert);
         listItem.textContent = input.value;
         ul.appendChild(listItem);
         input.value = "";
@@ -39,12 +42,31 @@ function createListItem (e) {
 function deleteTech (e) {
       ul.removeChild(e.target);
       decrementCounter();
+      hideSaveButton();
 }
 
+// function showDelete() {
+//     listItem.innerText = "X";
+// }
+//
+// function revert() {
+//   listItem.innerText = input.value;
+// }
+
 function showSaveButton () {
-    saveBtn.classList.remove('hide');
-    saveBtn.classList.add('show');
-    saveBtn.style.backgroundColor = "black";
+
+      saveBtn.classList.remove('hide');
+      saveBtn.classList.add('show');
+      saveBtn.style.backgroundColor = "black";
+
+}
+
+function hideSaveButton() {
+
+     if (divCounter.textContent === "0") {
+         saveBtn.className = 'hide';
+     }
+
 }
 
 function incrementCounter () {
@@ -56,6 +78,7 @@ function decrementCounter() {
   techCounter--;
   divCounter.textContent = techCounter;
 }
+
 
 
 // function saveStack () {
