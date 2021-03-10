@@ -1,42 +1,38 @@
 /*   FONT FAMILIES   */
 
 @font-face {
-
     src: url(../fonts/Consolas.ttf);
     font-family: "Consolas";
 }
 
 @font-face {
-
     src: url(../fonts/Avenir-Lt-Pro-65-Medium.otf);
     font-family: "Avenir LT Pro Black";
 }
 
 @font-face {
-
     src: url(../fonts/Avenir-Lt-Pro-55-Roman.otf);
     font-family: "Avenir LT Pro Heavy";
 }
 
 @font-face {
-
     src: url(../fonts/Inter-Regular.ttf);
     font-family: "Inter";
 }
 
 //  VARIABLES
 
-// Colors
+  // Colors
 
-$headerFooter: royalblue;
-$counterEtc: lavender;
-$h1FooterP: white;
+  $headerFooter: royalblue;
+  $counterEtc: lavender;
+  $h1FooterP: white;
 
-// Fonts
+  // Fonts
 
-$headingCounterStack: "Avenir LT Pro Black", "Arial Black";
-$footerFontStack: "Consolas", "Inter", "Arial", "Helvetica";
-$liHeading3: "Avenir Lt Pro Heavy";
+  $headingCounterStack: "Avenir LT Pro Black", "Arial Black";
+  $footerFontStack: "Consolas", "Inter", "Arial", "Helvetica";
+  $liHeading3: "Avenir Lt Pro Heavy";
 
 //  MIXINS
 
@@ -119,11 +115,13 @@ label {
 }
 
 .hide {
-    display: none;
+    // display: none;
+    opacity: 0;
 }
 
 .show {
     display: inline-block;
+    opacity: 1;
 }
 
 #btn {
@@ -141,10 +139,10 @@ label {
     color:$counterEtc;
     width: 5%;
     font-family: $liHeading3;
-    transition:5s ease-in;
+    transition: opacity 0.6s ease-in-out;
 }
 
-// section#tech-display{
+// section#tech-display {
 //     display: flex;
 //     justify-content: center;
 //     align-items: center;
