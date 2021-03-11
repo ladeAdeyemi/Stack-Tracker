@@ -1,22 +1,22 @@
 /*   FONT FAMILIES   */
 
 @font-face {
-    src: url(../fonts/Consolas.ttf);
+    src: url(fonts/Consolas.ttf);
     font-family: "Consolas";
 }
 
 @font-face {
-    src: url(../fonts/Avenir-Lt-Pro-65-Medium.otf);
+    src: url(fonts/Avenir-Lt-Pro-65-Medium.otf);
     font-family: "Avenir LT Pro Black";
 }
 
 @font-face {
-    src: url(../fonts/Avenir-Lt-Pro-55-Roman.otf);
+    src: url(fonts/Avenir-Lt-Pro-55-Roman.otf);
     font-family: "Avenir LT Pro Heavy";
 }
 
 @font-face {
-    src: url(../fonts/Inter-Regular.ttf);
+    src: url(fonts/Inter-Regular.ttf);
     font-family: "Inter";
 }
 
@@ -139,7 +139,7 @@ label {
     color:$counterEtc;
     width: 5%;
     font-family: $liHeading3;
-    transition: opacity 0.6s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
 // section#tech-display {

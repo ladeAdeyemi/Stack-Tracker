@@ -35,7 +35,7 @@ function createListItem (e) {
 
     } else {
 
-        let listItem = document.createElement("li");
+        const listItem = document.createElement("li");
         listItem.classList.add("inline-block", "li-styles");
         listItem.addEventListener('click', deleteListItem);
         // listItem.addEventListener('mouseover', showDelete);
@@ -66,7 +66,7 @@ function showSaveButton () {
 
 }
 
-function hideSaveButton() {
+function hideSaveButton () {
 
      if (divCounter.textContent === "0" || divCounter.textContent === "Stack Saved.") {
 
@@ -93,15 +93,24 @@ function decrementCounter() {
 function saveStack (e) {
 
     e.preventDefault();
-    let stack = ul.childNodes;
-    stack.forEach((node) => savedStack.push(node.textContent));
-    console.log(savedStack);
-    ul.innerHTML = "";
-    // showStackSavedModal();
-    divCounter.style.fontSize = "50px";
-    divCounter.innerText = "Stack Saved."
-    hideSaveButton();
-    return;
+
+    if (divCounter.textContent === "0") {
+
+      return;
+
+    } else {
+
+      const stack = ul.childNodes;
+      stack.forEach((node) => savedStack.push(node.textContent));
+      console.log(savedStack);
+      ul.innerHTML = "";
+      // showStackSavedModal();
+      divCounter.style.fontSize = "50px";
+      divCounter.innerText = "Stack Saved."
+      hideSaveButton();
+      return;
+
+    }
 
 }
 
