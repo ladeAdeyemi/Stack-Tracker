@@ -1,29 +1,21 @@
 /* DOM SELECTIONS */
 
-
 const btn = document.querySelector("#btn");
 const saveBtn = document.querySelector("#save-btn");
 const ul = document.querySelector("#ul");
 const divCounter = document.querySelector("#counter");
 const input = document.querySelector("#input");
 
-
 /* GLOBAL VARIABLES */
 
-
 let techCounter = 0; // (Displays the number of technologies being tracked by the user)
-let savedStack = []; // (Collects the technologies entered by the user when the save button is pressed)
-
 
 /* EVENT LISTENERS */
-
 
 btn.addEventListener("click", createListItem);
 saveBtn.addEventListener("click", saveStack);
 
-
 /* FUNCTIONS */
-
 
 function createListItem (e) {
 
@@ -94,6 +86,8 @@ function saveStack (e) {
 
     e.preventDefault();
 
+    let savedStack = []; // (Collects the technologies entered by the user when the save button is pressed)
+
     if (divCounter.textContent === "0") {
 
       return;
@@ -114,12 +108,9 @@ function saveStack (e) {
 
 }
 
-
 /*
 
 function showStackSavedModal () {
-
-
 
 }
 
@@ -138,4 +129,35 @@ function showStackSavedModal () {
 //
 // function revert() {
 //   listItem.innerText = input.value;
+// }
+
+// class Stack {
+//
+//     constructor() {
+//
+//     }
+//
+//   sortStack() {
+//     savedStack.sort();
+//   }
+// }
+
+// import { useState } from 'react'
+// import React from 'react'
+//
+// export default function HomePage (props) {
+//
+// const [name, setName] = useState('Olly');
+//
+//     return (
+//       <div className="dr-stone">
+//         <nav className="navBar">
+//           <ul>
+//               <li>About</li>
+//               <li>Contact</li>
+//           </ul>
+//         </nav>
+//       </div>
+//     )
+//
 // }

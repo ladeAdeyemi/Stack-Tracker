@@ -1,19 +1,15 @@
 /*   FONT FAMILIES   */
 @font-face {
-  src: url(../fonts/Consolas.ttf);
+  src: url(../fonts/consola.ttf);
   font-family: "Consolas";
 }
 @font-face {
-  src: url(../fonts/Avenir-Lt-Pro-65-Medium.otf);
+  src: url(../fonts/AvenirLtProBlack.otf);
   font-family: "Avenir LT Pro Black";
 }
 @font-face {
-  src: url(../fonts/Avenir-Lt-Pro-55-Roman.otf);
+  src: url(../fonts/AvenirLtProHeavy.otf);
   font-family: "Avenir LT Pro Heavy";
-}
-@font-face {
-  src: url(../fonts/Inter-Regular.ttf);
-  font-family: "Inter";
 }
 /*  MAIN CSS CODE  */
 * {
@@ -42,7 +38,7 @@ body {
 }
 
 #heading2 {
-  font-family: "Avenir LT Pro Black", "Arial Black";
+  font-family: "Avenir Lt Pro Heavy";
   font-size: 20px;
   color: lavender;
   margin: auto;
