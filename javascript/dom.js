@@ -7,7 +7,6 @@ const divCounter = document.querySelector("#counter");
 const form = document.querySelector("#stack");
 const input = document.querySelector("#input");
 
-
 /* GLOBAL VARIABLES */
 
 let techCounter = 0; // (Displays the number of technologies being tracked by the user)
@@ -32,8 +31,6 @@ function createListItem (e) {
         const listItem = document.createElement("li");
         listItem.classList.add("li-styles");
         listItem.addEventListener('click', deleteListItem);
-        // listItem.addEventListener('mouseover', showStrikeThrough);
-        // listItem.addEventListener('mouseout', removeStrikeThrough);
         listItem.textContent = input.value;
         ul.appendChild(listItem);
         input.value = "";
@@ -113,10 +110,8 @@ function removeButtons () {
 
     btn.className = "hide";
     saveBtn.className = "hide";
-    setTimeout(() => {
-      form.removeChild(btn);
-      form.removeChild(saveBtn);
-    }, 1000);
+    form.removeChild(btn);
+    form.removeChild(saveBtn);
 
 }
 
@@ -136,29 +131,5 @@ function viewStack (e) {
     Array.from(localStorage.stack).forEach((stack)=> {
     console.log(stack);
     })
-    
-}
-
-/*
-
-function showStackSavedModal () {
 
 }
-
-*/
-
-/*
-
- NOTE: When you sort out the above functionality (i.e. divCounter.innerText)
- in a modal, don't forget to change the "or" condition in hideSaveButton()
-
-*/
-
-// function showStrikeThrough() {
-//     listItem.innerText = "X";
-// When the user mousesover a listitem, I want the inner text to have a strikethrough and then when they mouseoff I want the strikethrough gone.
-// }
-//
-// function removeStrikeThrough() {
-//   listItem.innerText = input.value;
-// }
