@@ -15,7 +15,6 @@
     font-family: "Avenir LT Pro Heavy";
 }
 
-
 //  VARIABLES
 
   // Colors
@@ -40,9 +39,22 @@
     border: 2px solid $counterEtc;
     border-radius: 3px;
     font-family: $footerFontStack;
-    padding: 3px;
+    padding: 4px;
     margin: 5px;
     margin-top: 10px;
+}
+
+@mixin buttonStyles {
+  padding: 5px;
+  margin: 5px;
+  background-color:$headerFooter;
+  border-radius: 4px;
+  border: none;
+  color:$counterEtc;
+  width: 4%;
+  font-family: $liHeading3;
+  margin-right: 5px;
+  transition: opacity 0.5s ease-in-out;
 }
 
 /*  MAIN CSS CODE  */
@@ -111,7 +123,6 @@ label {
 }
 
 .hide {
-    // display: none;
     opacity: 0;
 }
 
@@ -121,21 +132,12 @@ label {
 }
 
 #btn {
-    @include formStyles;
-    background-color:$headerFooter;
-    color:$counterEtc;
-    width: 5%;
-    font-family: $liHeading3;
-    margin-right: 5px;
+    @include buttonStyles;
 }
 
 #save-btn {
-    @include formStyles;
-    background-color:$headerFooter;
-    color:$counterEtc;
-    width: 5%;
-    font-family: $liHeading3;
-    transition: opacity 0.5s ease-in-out;
+    @include buttonStyles;
+    color: white;
 }
 
 // section#tech-display {
@@ -146,7 +148,6 @@ label {
 // }
 
 ul {
-    // max-width: 30%;
     @include centered;
     margin-bottom: 5px;
 }
@@ -201,6 +202,7 @@ ul {
     padding: 5px;
     border: 1px solid $counterEtc;
     transition: 0.4s ease;
+    display: inline-block;
 }
 
 .li-styles:hover {
@@ -209,8 +211,15 @@ ul {
     padding: 5px;
 }
 
-.inline-block {
-    display: inline-block;
+.counterMargin {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+}
+
+.view-btn {
+    @include buttonStyles;
+    width: 7%;
 }
 
 /*  MEDIA QUERIES  */

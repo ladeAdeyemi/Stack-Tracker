@@ -73,7 +73,7 @@ label {
   border: 2px solid lavender;
   border-radius: 3px;
   font-family: "Consolas", "Inter", "Arial", "Helvetica";
-  padding: 3px;
+  padding: 4px;
   margin: 5px;
   margin-top: 10px;
   width: 25%;
@@ -90,31 +90,30 @@ label {
 }
 
 #btn {
-  border: 2px solid lavender;
-  border-radius: 3px;
-  font-family: "Consolas", "Inter", "Arial", "Helvetica";
-  padding: 3px;
+  padding: 5px;
   margin: 5px;
-  margin-top: 10px;
   background-color: royalblue;
+  border-radius: 4px;
+  border: none;
   color: lavender;
-  width: 5%;
+  width: 4%;
   font-family: "Avenir Lt Pro Heavy";
   margin-right: 5px;
+  transition: opacity 0.5s ease-in-out;
 }
 
 #save-btn {
-  border: 2px solid lavender;
-  border-radius: 3px;
-  font-family: "Consolas", "Inter", "Arial", "Helvetica";
-  padding: 3px;
+  padding: 5px;
   margin: 5px;
-  margin-top: 10px;
   background-color: royalblue;
+  border-radius: 4px;
+  border: none;
   color: lavender;
-  width: 5%;
+  width: 4%;
   font-family: "Avenir Lt Pro Heavy";
+  margin-right: 5px;
   transition: opacity 0.5s ease-in-out;
+  color: white;
 }
 
 ul {
@@ -171,6 +170,7 @@ ul {
   padding: 5px;
   border: 1px solid lavender;
   transition: 0.4s ease;
+  display: inline-block;
 }
 
 .li-styles:hover {
@@ -179,8 +179,23 @@ ul {
   padding: 5px;
 }
 
-.inline-block {
-  display: inline-block;
+.counterMargin {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.view-btn {
+  padding: 5px;
+  margin: 5px;
+  background-color: royalblue;
+  border-radius: 4px;
+  border: none;
+  color: lavender;
+  width: 4%;
+  font-family: "Avenir Lt Pro Heavy";
+  margin-right: 5px;
+  transition: opacity 0.5s ease-in-out;
+  width: 7%;
 }
 
 /*  MEDIA QUERIES  */
