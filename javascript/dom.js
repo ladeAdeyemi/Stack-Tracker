@@ -22,22 +22,16 @@ function createListItem (e) {
 
     e.preventDefault();
 
-    if (input.value === "") {
+    if (input.value === "") return;
 
-        return;
-
-    } else {
-
-        const listItem = document.createElement("li");
-        listItem.classList.add("li-styles");
-        listItem.addEventListener('click', deleteListItem);
-        listItem.textContent = input.value;
-        ul.appendChild(listItem);
-        input.value = "";
-        incrementCounter();
-        showSaveButton();
-
-    }
+    const listItem = document.createElement("li");
+    listItem.classList.add("li-styles");
+    listItem.addEventListener('click', deleteListItem);
+    listItem.textContent = input.value;
+    ul.appendChild(listItem);
+    input.value = "";
+    incrementCounter();
+    showSaveButton();
 
 }
 
@@ -65,6 +59,8 @@ function decrementCounter() {
 
 function showSaveButton () {
 
+    if (saveBtn.classList.contains('show')) return;
+
     saveBtn.classList.remove('hide');
     saveBtn.classList.add('show');
     saveBtn.style.backgroundColor = "black";
@@ -73,11 +69,7 @@ function showSaveButton () {
 
 function hideSaveButton () {
 
-     if (divCounter.textContent === "0" || divCounter.textContent === "Stack Saved.") {
-
-         saveBtn.className = 'hide';
-
-     }
+     if (divCounter.textContent == 0) saveBtn.className = 'hide';
 
 }
 
@@ -85,24 +77,18 @@ function saveStack (e) {
 
     e.preventDefault();
 
-    if (divCounter.textContent === "0") {
+    if (divCounter.textContent == 0) return;
 
-        return;
-
-    } else {
-
-        let savedStack = []; // (Collects the technologies entered by the user when the save button is pressed)
-        const stack = ul.childNodes;
-        stack.forEach((node) => savedStack.push(node.textContent));
-        localStorage.stack = savedStack;
-        ul.innerHTML = "";
-        divCounter.style.fontSize = "60px";
-        divCounter.classList.add("counterMargin");
-        divCounter.innerText = "Stack Saved! Never Stop Learning."
-        removeButtons();
-        showViewStackButton();
-
-    }
+    let savedStack = [];
+    const stack = ul.childNodes;
+    stack.forEach((node) => savedStack.push(node.textContent));
+    localStorage.stack = savedStack;
+    ul.innerHTML = "";
+    divCounter.style.fontSize = "60px";
+    divCounter.classList.add("counterMargin");
+    divCounter.innerText = "Stack Saved! Never Stop Learning."
+    removeButtons();
+    showViewStackButton();
 
 }
 
@@ -120,7 +106,7 @@ function showViewStackButton() {
     let newButton = document.createElement("button");
     newButton.className = "view-btn";
     newButton.textContent = "View Stack";
-    newButton.addEventListener('click', viewStack);
+    newButton.addEventListener("click", viewStack);
     form.appendChild(newButton);
 
 }
@@ -128,8 +114,66 @@ function showViewStackButton() {
 function viewStack (e) {
 
     e.preventDefault();
-    Array.from(localStorage.stack).forEach((stack)=> {
+    Array.from(localStorage.stack).forEach((stack) => {
     console.log(stack);
     })
 
 }
+
+
+/* MORE BELOW (CODE TO CLOSE OVER TECH COUNTER GLOBAL VARIABLE ) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function operateTechCounter (divCounter.textContent) {
+//
+//      let techCounter = divCounter.textContent; // (Displays the number of technologies being tracked by the user)
+//
+//          function incrementCounter () {
+//                techCounter++;
+//                divCounter.textContent = techCounter;
+//          }
+//
+//          function decrementCounter() {
+//               techCounter--;
+//               divCounter.textContent = techCounter;
+//          }
+//
+// // The code below is supposed to go as follows: if a list item is added to the ul the tech counter shoul be incremented and vice versa if a list //item is removed from the ul
+//
+//         if (ul.appendChild) {
+//
+//            incrementCounter();
+//
+//         }
+//
+//         if (ul.removeChild) {
+//
+//            decrementCounter();
+//
+//         }
+//
+//  }
